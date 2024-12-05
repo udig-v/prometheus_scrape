@@ -48,4 +48,6 @@ Example:
 python3 script.py "rate(node_disk_io_time_seconds_total[1m])" "now - 24h" "now" "60s"
 ```
 If you want to gather data for 24 hours, you can use `"now - 24h"` as `start_time` argument. Otherwise, use unix timestamp. 
-Step argument represents how often metrics need to be captured. For instance, with `step=60s`, the graph will show metrics every 1 minute.  
+Step argument represents how often metrics need to be captured. For instance, with `step=60s`, the graph will show metrics every 1 minute. 
+
+The graph and .csv file with data will be downloaded into the same folder.
